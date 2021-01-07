@@ -1,18 +1,12 @@
-# Parcel, Custom Service Workers, and Precaching
+# Parcel and Precaching with a Custom Service Worker
 
 ![CI](https://github.com/JSanchezIO/parcel-plugin-inject-manifest-service-worker/workflows/CI/badge.svg)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
-[![npm version](https://badge.fury.io/js/parcel-plugin-inject-manifest-service-worker.svg)](https://badge.fury.io/js/parcel-plugin-inject-manifest-service-worker)
+[![npm version](https://img.shields.io/npm/v/parcel-plugin-inject-manifest-service-worker)](https://img.shields.io/npm/v/parcel-plugin-inject-manifest-service-worker)
 
-You've a custom service worker but want to support precaching using workbox. This will inject the
+You've a custom service worker and want to support precaching using workbox. This will inject the
 files outputted from a Parcel build as a workbox precache compliant array.
-
-## Table of Contents
-
-1. Installation
-2. Usage
-3. Configuration
 
 ## Installation
 
@@ -24,13 +18,13 @@ npm i parcel-plugin-inject-manifest-service-worker
 
 ## Usage
 
-1. Insert `SERVICE_WORKER_MANIFEST_ENTRIES` wherever you want a workbox precache compliant array
+Insert `SERVICE_WORKER_MANIFEST_ENTRIES` wherever you want a workbox precache compliant array
 
 ```js
 precacheAndRoute(SERVICE_WORKER_MANIFEST_ENTRIES);
 ```
 
-2. Build using Parcel
+Build using Parcel
 
 ## Configuration
 
