@@ -3,6 +3,10 @@ const workbox = require('workbox-build');
 
 module.exports = function generateSWPrecache(bundler) {
   bundler.on('bundled', async function onBundled() {
+    if (process.env.NODE_ENV !== 'production') {
+      return;
+    }
+
     const manifest = await workbox.getManifest({
       dontCacheBustURLsMatching: new RegExp(
         /(^((?!service-worker\.).)*\.js$|.svg|.png|.woff2|.css)/g
