@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/JSanchezIO/parcel-plugin-inject-manifest-service-worker/compare/v1.1.0...v1.1.1) (2021-01-14)
+
+
+### Bug Fixes
+
+* remove service-worker from precache ([21e778e](https://github.com/JSanchezIO/parcel-plugin-inject-manifest-service-worker/commit/21e778edb80bb1473ec35358ad5aebaf92268037))
+
 # [1.1.0](https://github.com/JSanchezIO/parcel-plugin-inject-manifest-service-worker/compare/v1.0.0...v1.1.0) (2021-01-12)
 
 
