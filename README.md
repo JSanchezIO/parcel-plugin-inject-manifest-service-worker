@@ -24,6 +24,12 @@ Insert `SERVICE_WORKER_MANIFEST_ENTRIES` wherever you want a workbox precache co
 precacheAndRoute(SERVICE_WORKER_MANIFEST_ENTRIES);
 ```
 
+If you're using TS, add the following to avoid errors
+
+```js
+/// <reference path="../../node_modules/parcel-plugin-inject-manifest-service-worker/index.d.ts" />
+```
+
 Build using Parcel
 
 ## Configuration
@@ -37,4 +43,3 @@ and be located as an immediate child of the output folder.
 The generated manifest will provide revisions for any files matching:
 
 - `*.html`
-- `service-worker.js`

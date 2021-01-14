@@ -8,10 +8,9 @@ module.exports = function generateSWPrecache(bundler) {
     }
 
     const manifest = await workbox.getManifest({
-      dontCacheBustURLsMatching: new RegExp(
-        /(^((?!service-worker\.).)*\.js$|.svg|.png|.woff2|.css)/g
-      ),
+      dontCacheBustURLsMatching: new RegExp(/(.js|.svg|.png|.woff2|.css)/g),
       globDirectory: bundler.options.outDir,
+      globIgnores: ['**/service-worker.js'],
       globPatterns: ['**/*.{html,js,css,jpg,png,gif,svg,eot,ttf,woff,woff2}'],
     });
 
