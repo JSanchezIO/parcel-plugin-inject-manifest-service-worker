@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/JSanchezIO/parcel-plugin-inject-manifest-service-worker/compare/v1.1.1...v1.1.2) (2021-02-24)
+
+
+### Performance Improvements
+
+* **deps:** install only required ([2c279c8](https://github.com/JSanchezIO/parcel-plugin-inject-manifest-service-worker/commit/2c279c856d2ba45bf5a4156cb67e7391d59eb044))
+
 ## [1.1.1](https://github.com/JSanchezIO/parcel-plugin-inject-manifest-service-worker/compare/v1.1.0...v1.1.1) (2021-01-14)
 
 

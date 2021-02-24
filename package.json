@@ -1,6 +1,6 @@
 {
   "name": "parcel-plugin-inject-manifest-service-worker",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Injects the files outputted from a Parcel build as a workbox precache compliant array",
   "license": "MIT",
   "repository": {
